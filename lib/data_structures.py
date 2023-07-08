@@ -29,13 +29,14 @@ def get_names(spicy_foods):
 
 
 def get_spiciest_foods(spicy_foods):
-    heat_level_list = list()
+    heat_level_list = []
 
-    for food in spicy_foods :
-        if food['heat_level'] > 5 :
+    for food in spicy_foods:
+        if food['heat_level'] > 5:
             heat_level_list.append(food)
 
-        return heat_level_list
+    return heat_level_list
+
 
 
 def print_spicy_foods(spicy_foods):
