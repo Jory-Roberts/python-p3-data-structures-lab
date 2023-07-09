@@ -38,12 +38,20 @@ def get_spiciest_foods(spicy_foods):
     return heat_level_list
 
 
-
 def print_spicy_foods(spicy_foods):
-    pass
+    emoji = '🌶'
+
+    for food in spicy_foods :
+        count = food['heat_level'] * emoji
+        print(f"{food['name']} ({food['cuisine']}) | Heat Level: {count}")
+
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
-    pass
+
+    for food in spicy_foods :
+        if food['cuisine'] == cuisine :
+            return food
+
 
 def print_spiciest_foods(spicy_foods):
     pass
