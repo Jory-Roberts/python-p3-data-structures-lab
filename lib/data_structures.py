@@ -54,6 +54,14 @@ def get_spicy_food_by_cuisine(spicy_foods, cuisine):
 
 
 def print_spiciest_foods(spicy_foods):
+    emoji = '🌶'
+
+    for food in spicy_foods :
+        if food['heat_level'] > 5 :
+            count = food['heat_level'] * emoji
+            print(f"{food['name']} ({food['cuisine']}) | Heat Level: {count}")
+
+
     pass
 
 def get_average_heat_level(spicy_foods):
